@@ -1,0 +1,347 @@
+.gridContainer {
+    grid-template-areas: 'header header header header header header'
+    'menu menu menu menu menu menu'
+    'product product product product product product'
+    'info info info info info info';
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.body {
+    background-color: #F4F4F4;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin: auto; 
+    padding: 45px;
+    align-items: center;
+    
+}
+
+
+.navIcon{
+    display: flex;
+    width: 40px;
+    background-image: url(meny.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+}
+
+.cartIcon{
+    display: flex;
+    width: 64px;
+    background-image: url(cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 64px;
+}
+
+
+
+
+.searchBar {
+    display: flex;
+    margin: 0 24px 0 24px;
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #D8D8DB;
+    align-items: center;
+    padding: 16px;
+}
+
+
+.searchIcon {
+    background-image: url(searchIcon.png);
+    background-size: cover;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0px 6px 0 0;
+    opacity: 1;
+    color: #2A2C41;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.searchBar input {
+    float: left;
+    margin: 0px 6px 0 0;
+    opacity: 1;
+    color: #2A2C41;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #D8D8DB;
+    border: none;
+    font-size: 16px;
+    height: 100%;
+}
+
+
+.searchText {
+    display: flex;
+}
+
+.categoryBar {
+    grid-area: menu;
+    padding: 0  0 0 32px;
+}
+
+
+.categoryBar h3{
+    color: #2A2C41;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    padding: 0;
+}
+
+.categoryBar p{
+    color: #2A2C41;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: -16px 0 0 0;
+    padding: 0;
+
+}
+
+.categoryIntro {
+    margin-top: 16px;
+}
+
+.categoryField {
+    align-content: center;
+    margin-top: 24px
+}
+
+
+.categoryBox {
+    position: relative;
+    float: left;
+    height: 88px;
+    width: 88px;
+    background-color: #2A2C41;
+    border-radius: 24px;
+    margin: 0 12px 0 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.categoryBox1 {
+    position: relative;
+    float: left;
+    height: 88px;
+    width: 88px;
+    background-color: #D8D8DB;
+    border-radius: 24px;
+    margin: 0 12px 0 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.categoryBox1 p {
+    position: absolute;
+    width: 100%;
+    color: #2A2C41;
+    bottom: 0;
+    margin-bottom: 6px;
+    
+}
+
+.categoryIcon1 {
+    display: flex;
+    background-image: url(drinks.png);
+    width: 100%;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 12px;
+}
+
+.categoryIcon2 {
+    display: flex;
+    background-image: url(pasta.png);
+    width: 100%;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 12px;
+}
+
+
+.pizzaImage {
+    background-image: url(pizza.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.categoryBox p {
+    position: absolute;
+    width: 100%;
+    color: #F4F4F4;
+    bottom: 0;
+    margin-bottom: 6px;
+    
+}
+
+.categoryIcon {
+    display: flex;
+    background-image: url(drinksIcon.png);
+    width: 100%;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 12px;
+}
+
+.productSection {
+    grid-area: main;
+    width: 100%;
+    padding: 0  32px 0 32px;
+    margin-top: 160px;
+    align-content: center;
+
+}
+
+.productField {
+    margin: auto;
+    width: 100%;
+    
+    
+}
+
+.productCard {
+    position: relative;
+    float: left;
+    margin: 0 16px 16px 0;
+    width: 214px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0px 2px 14px rgb(0,0,0,0.5) ;
+    text-align: left;
+}
+
+.productImage {
+    background-image: url(veganoli.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 128px;
+    scale: 1.03;
+    width: 100%;
+}
+
+.productText {
+
+    color: #2A2C41;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 0;
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.productText h6{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.productInfo {
+
+}
+
+.productPrice {
+    display: flex;
+    float: right;
+    width: 64px;
+    background-color: #FDBF50;
+    text-align: center;
+    border-radius: 16px;
+    height: 28px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.productPrice p {
+    width: 100%;
+}
+
+.infoSection {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+}
+
+.callBox {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin: 16px 32px 32px 32px;
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #2A2C41;
+}
+
+.callBox h3 {
+    width: 80%;
+    color: #f4f4f4;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.callButton {
+    width: 96px;
+    height: 32px;
+    color: #2A2C41;
+    background-color: #FDBF50;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.callImage {
+    position: absolute;
+    background-image: url(callImage.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    margin: 0 -16px 0 0;
+
+}
+
+.tilToppen {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+}
